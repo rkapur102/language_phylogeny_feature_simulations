@@ -32,7 +32,7 @@ These are various types of simulations.
 
 migration_only.R - Simulation used solely to examine birth, death, and migration.
 
-structured.R - Simulation used to examine structured features. No descriptive statistics capabilities built in.
+structured.R - Simulation used to examine structured features. Supports transitional probabilities. No descriptive statistics capabilities built in.
 
 unstructured.R - Simulation used to examine unstructured features. No descriptive statistics capabilities built in.
 
