@@ -163,3 +163,19 @@ p4 <- plot_stats("size = 25°", "areal homogeneity", "ah_25", c(1,1.4), master_d
 p5 <- plot_stats("size = 50°", "areal homogeneity", "ah_50", c(1,1.4), master_ds, master_ds_line)
 
 grid.arrange(p1,p2,p3,p4,p5, ncol=5, top="Comparison Across Simulations and Area Section Sizes, Areal Homogeneity (Parkvall)")
+
+# transitional probability
+
+plot_tp_stats <- function(master_ds) {
+  stats <- ggplot(master_ds, aes(x=ts, y=percent)) + 
+    labs(x="time step",y="percent of dominant feature value") +
+    scale_y_continuous(breaks = seq(from = 0.55, to = 0.95, by = 0.05),
+                       labels = seq(from = 0.55, to = 0.95, by = 0.05)) + 
+    scale_x_continuous(breaks = seq(from = 0, to = 500, by = 100),
+                       labels = seq(from = 0, to = 500, by = 100)) + 
+    geom_line(aes(color=sim), size = 0.7) +
+    scale_color_manual(name = "simulation", labels = c("80% | 20%", "60% | 40%", "70% | 30%"), values = c("#111111", "#999999", "#555555")) # +
+   # theme(legend.position="none") 
+  stats
+}
+plot_tp_stats(master_ds)
