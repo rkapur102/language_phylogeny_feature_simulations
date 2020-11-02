@@ -12,7 +12,7 @@ GUIDE TO OTHER FILES/FOLDERS:
 
 "data_analysis" folder
 ----------------------
-data_analysis.R - main data analysis and figure generation file. Contains the functions used to generate graphs for descriptive statistics. Also contains functions for plotting simulated languages, largest simulated families, language feature values, or populated places on a map.
+data_analysis.R - main data analysis and figure generation file. Contains the functions used to generate graphs for descriptive statistics and transitional probability studies. Also contains functions for plotting simulated languages, largest simulated families, language feature values, or populated places on a map.
 
 three_largest_families_visualization.R - code to plot three largest simulated families on map.
 
