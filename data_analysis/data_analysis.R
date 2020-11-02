@@ -164,8 +164,7 @@ p5 <- plot_stats("size = 50°", "areal homogeneity", "ah_50", c(1,1.4), master_d
 
 grid.arrange(p1,p2,p3,p4,p5, ncol=5, top="Comparison Across Simulations and Area Section Sizes, Areal Homogeneity (Parkvall)")
 
-# transitional probability
-
+# transitional probabilities
 plot_tp_stats <- function(master_ds) {
   stats <- ggplot(master_ds, aes(x=ts, y=percent)) + 
     labs(x="time step",y="percent of dominant feature value") +
