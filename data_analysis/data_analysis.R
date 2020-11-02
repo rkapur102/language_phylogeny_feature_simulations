@@ -1,4 +1,4 @@
-# First, run simulation. Ensure languages_before, languages_after, and descriptive_stats are stored in RStudio Global Environment
+# First, run simulation. Ensure languages_before, languages_after, and descriptive_stats are stored in RStudio Global Environment.
 
 require(maps)
 require(mapdata)
